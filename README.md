@@ -43,13 +43,23 @@ Borrow out = A'Bin + A'B + BBin
 Write the detailed procedure here
 
 **Program:**
+module digital4(a,b,c,x,y,z,sum,dif,car,bor);
+input a,b,c,x,y,z;
+output sum,dif,car,bor;
+assign sum = a^b^c;
+assign car = a&b | a&c | b&c;
+assign dif = x^y^z;
+assign bor = ~x&z | ~x&y | y&z;
+endmodule
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by:D.JANANI RegisterNumber:25015838
 */
 
 **RTL Schematic**
+<img width="1571" height="869" alt="Screenshot 2026-03-20 234524" src="https://github.com/user-attachments/assets/a51ad821-d30a-4df5-94c7-8f88d680fe8f" />
 
 **Output Timing Waveform**
+<img width="1399" height="782" alt="Screenshot 2026-03-20 234615" src="https://github.com/user-attachments/assets/35bb0a44-34ce-4bba-b42f-a9b4d75b63ee" />
 
 **Result:**
 
